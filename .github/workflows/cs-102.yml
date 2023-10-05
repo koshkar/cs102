@@ -23,4 +23,5 @@ jobs:
         fi
     - name: Run unittests
       run: |
-        python3 -m unittest
+        cd ../../tests/lab1/
+        python3 -m unittest test_calculator.py
