@@ -23,6 +23,6 @@ jobs:
         fi
     - name: Run unittests
       run: |
-        python3 -m unittest $GITHUB_WORKSPACE/tests/lab1/test_calculator.py
+        python3 -m unittest ${{ github.head_ref }}/tests/lab1/test_calculator.py
 
         
