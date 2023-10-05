@@ -1,7 +1,7 @@
 import tkinter as tk
 import unittest
 import sys
-sys.path.append('/Users/kirillkoskarev/programming_itmo/cs102/src')
+sys.path.append('../../src')
 from lab1.calculator import Calculator
 
 class CalculatorTestCase(unittest.TestCase):
