@@ -80,7 +80,7 @@ class Calculator:
         self.number_entry.delete(0, tk.END)
 
     def button_equal(self):
-        '''Обработка команды равенсво'''
+        '''Обработка команды равенство'''
         second_number = self.number_entry.get()
         self.number_entry.delete(0, tk.END)
 

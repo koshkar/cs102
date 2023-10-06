@@ -1,8 +1,8 @@
 import tkinter as tk
 import unittest
 import sys
-sys.path.append('../../src')
-from lab1.calculator import Calculator
+sys.path.append('../../src/lab1')
+from calculator import Calculator
 
 class CalculatorTestCase(unittest.TestCase):
 
