@@ -94,13 +94,22 @@ class Calculator:
             self.number_entry.insert(0, self.f_num * int(second_number))
 
         if self.math == "division":
-            self.number_entry.insert(0, self.f_num / int(second_number))
+            if second_number == '0':
+                self.number_entry.insert(0, 'На 0 делить нельзя! (Здесь)')
+            else:    
+                self.number_entry.insert(0, self.f_num / int(second_number))
 
         if self.math == "floor_div":
-            self.number_entry.insert(0, self.f_num // int(second_number))
+            if second_number == '0':
+                self.number_entry.insert(0, 'На 0 делить нельзя! (Здесь)')
+            else:    
+                self.number_entry.insert(0, self.f_num // int(second_number))
 
         if self.math == "modulus":
-            self.number_entry.insert(0, self.f_num % int(second_number))
+            if second_number == '0':
+                self.number_entry.insert(0, 'На 0 делить нельзя! (Здесь)')
+            else:    
+                self.number_entry.insert(0, self.f_num % int(second_number))
 
     def button_subtraction(self):
         '''Обработка команды разность'''
